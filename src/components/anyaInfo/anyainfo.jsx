@@ -9,18 +9,38 @@ const mainPage = () => {
 
         </nav>
     </header>
-        <section class="features" id="feat">
-            <div class="feature-grid">
+        <section id="home" class="hero">
+            <p>Hello I am</p>
+            <h1>Anya Anya</h1>
+            <p>FullStack Developer</p>
+            <div className='buttons-container'>
+              <button className="cv-btn"><a href="#features">Resume</a></button>
+              
+              <button className="cta-btn"><a href="#projects">Projects</a></button>
+              
+              <button className="contact-btn"><a href="#features">Contact Me</a></button>
+            </div>
+        </section>
 
-                <div class="feature-card">
-                    <i class="fa-solid fa-wand-sparkles"></i>
-                    <h3>AI Optimization</h3>
-                    <p>Let our AI help you tailor your resume to match job requirements perfectly</p>
+        <section className="features" id="projects">
+            <div className="feature-grid">
+
+                <div className="feature-card">
+
                 </div>
-                <div class="feature-card">
-                    <i class="fa-solid fa-pencil"></i>
-                    <h3>Custom Generation</h3>
-                    <p>Create a tailored CV from scratch using AI assistance</p>
+
+                <div className="feature-card">
+
+                   
+                </div>
+
+                <div className="feature-card">
+                    
+                </div>
+
+                <div className="feature-card">
+
+                   
                 </div>
 
             </div>

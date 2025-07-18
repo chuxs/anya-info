@@ -5,35 +5,50 @@ import {IoLogoJavascript} from 'react-icons/io5'
 import {FaCss3Alt} from 'react-icons/fa'
 import {FaReact} from 'react-icons/fa'
 import {FaNode} from 'react-icons/fa6'
-import {FaJava} from 'react-icons/fa'
+import { VscAzure } from "react-icons/vsc";
+import { FaNodeJs } from "react-icons/fa";
+import { IoLogoFirebase } from "react-icons/io5";
+import { TbApi } from "react-icons/tb";
+import { SiPostman } from "react-icons/si";
+import { IoLogoVercel } from "react-icons/io5";
+// import { TbBrandOffice } from "react-icons/tb";
+// import {FaJava} from 'react-icons/fa'
 // import {FaBootstrap} from 'react-icons/fa'
 // import {BsPatchCheckFill} from 'react-icons/bs'
 // import {SiMicrosoftazure} from 'react-icons/si'
-import { SiAzuredevops } from '@icons-pack/react-simple-icons';
-import {RiSpeakFill} from 'react-icons/ri'
-import {FaConnectdevelop} from 'react-icons/fa'
-import {GiTeamIdea} from 'react-icons/gi'
-import {SiMicrosoftoffice} from 'react-icons/si'
+// import {RiSpeakFill} from 'react-icons/ri'
+// import {FaConnectdevelop} from 'react-icons/fa'
+// import {GiTeamIdea} from 'react-icons/gi'
+// import {SiMicrosoftoffice} from 'react-icons/si'
+
 
 const Stack = () => {
   return (
-    <section id='experience'>
+    <section class="features" id="feat">
       <h5>What Skills I Have</h5>
       <h2>My Experience</h2>
 
-      <div className="container experience__container">
+      <div className="feature-grid experience__container">
         {/* I used Stack in place of frontend which the video tutorial wsa using */}
-        <div className="experience__Stack">
+        <div className="feature-card">
 
-          <h3>Developement Experience</h3>
+          <h3>Stack</h3>
 
           <div className="experience__content">
+
+            <article className='experience__details'>
+              <FaReact className='react_icon'/>
+              <div>
+              <h5>React</h5> 
+              <small className='text-light'>  </small>
+              </div>
+            </article>
 
             <article className='experience__details'>
               <FaHtml5 className='html_icon'/>
               <div>
               <h5>HTML</h5> 
-              <small className='text-light'> Experienced </small>
+              <small className='text-light'>  </small>
               </div>
             </article>
 
@@ -41,7 +56,7 @@ const Stack = () => {
               <IoLogoJavascript className='javascript_icon'/>
               <div>
               <h5>JavaScript</h5> 
-              <small className='text-light'> Experienced </small>
+              <small className='text-light'>  </small>
               </div>
             </article>
 
@@ -49,15 +64,7 @@ const Stack = () => {
               <FaCss3Alt className='css_icon'/>
               <div>
               <h5>CSS</h5> 
-              <small className='text-light'> Experienced </small>
-              </div>
-            </article>
-
-            <article className='experience__details'>
-              <FaReact className='react_icon'/>
-              <div>
-              <h5>React</h5> 
-              <small className='text-light'> Experienced </small>
+              <small className='text-light'>  </small>
               </div>
             </article>
 
@@ -65,25 +72,18 @@ const Stack = () => {
               <FaNode className='node_icon'/>
               <div>
               <h5>Node.js</h5> 
-              <small className='text-light'> Intermediate </small>
+              <small className='text-light'>  </small>
               </div>
             </article>
 
             <article className='experience__details'>
-              <FaJava className='java_icon'/>
+              <FaNodeJs className='node_icon'/>
               <div>
-              <h5>Java</h5> 
-              <small className='text-light'> Intermediate </small>
+              <h5>Express.js</h5> 
+              <small className='text-light'>  </small>
               </div>
             </article>
 
-            {/* <article className='experience__details'>
-              <FaBootstrap/>
-              <div>
-              <h5>Bootstrap</h5> 
-              <small className='text-light'> Intermediate </small>
-              </div>
-            </article> */}
 
           </div>
 
@@ -92,37 +92,53 @@ const Stack = () => {
 
         {/* Professional experience starts here */}
 
-        <div className="experience__professional">  
+        <div className="feature-card">  
 
-        <h3>Professional Experience</h3>
+        <h3>Tools</h3>
 
           <div className="experience__content">
 
             <article className='experience__details'>
-              <SiAzuredevops className='azurecolor'/>
+              <VscAzure className='azurecolor'/>
               <div>
-              <h5>AZ 104</h5> 
-              <small className='text-light'> Certified </small>
+              <h5>Azure</h5> 
+              <small className='text-light'>  </small>
               </div>
             </article>
 
             <article className='experience__details'>
-              <SiAzuredevops className='azurecolor'/>
+              <IoLogoFirebase className='firebase_icon'/>
               <div>
-              <h5>AZ 900</h5> 
-              <small className='text-light'> Certified </small>
+              <h5>Firebase</h5> 
+              <small className='text-light'>  </small>
               </div>
             </article>
 
             <article className='experience__details'>
-              <SiMicrosoftoffice className='microsoftoffice'/>
+              <TbApi className='api-icon'/>
               <div>
-              <h5>Microsoft Office</h5> 
-              <small className='text-light'> Excellent </small>
+              <h5>RESTful API</h5> 
+              <small className='text-light'>  </small>
               </div>
             </article>
 
             <article className='experience__details'>
+              <SiPostman className='postman_icon'/>
+              <div>
+              <h5>Postman</h5> 
+              <small className='text-light'>  </small>
+              </div>
+            </article>
+
+            <article className='experience__details'>
+              <IoLogoVercel className='vercel_icon'/>
+              <div>
+              <h5>Vercel</h5> 
+              <small className='text-light'>  </small>
+              </div>
+            </article>
+
+            {/* <article className='experience__details'>
               <RiSpeakFill className='general_icon'/>
               <div>
               <h5> Communication</h5> 
@@ -144,12 +160,13 @@ const Stack = () => {
               <h5>Teamwork Skills</h5> 
               <small className='text-light'> Excellent </small>
               </div>
-            </article>
+            </article> */}
 
           </div>
 
         </div>
       </div>
+
     </section>
   )
 }

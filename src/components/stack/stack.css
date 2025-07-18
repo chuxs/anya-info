@@ -1,25 +1,38 @@
-.experience__container{
+.features {
+    padding: 4rem 1rem;
+}
+
+.features h2 {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.features h5 {
+    text-align: center;
+}
+
+
+.feature-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-.experience__container > div{
-    background: transparent;
-    /* background: var(--color-bg-variant); */
-    padding: 2.4rem 5rem;
-    border-radius: 2rem;
-    border: 1px solid var(--color-bg-variant);   
-    transition: var(--transition);
+.feature-card {
+    padding: 2rem;
+    /* background: #f9f9f9; */
+    border-radius: 10px;
+    border: 1px solid rgba(0,0,0,0.1);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    color: black;
+    cursor: pointer;
 }
 
-/* .experience__container > div:hover{
-    background: transparent;
-    border-color: var(--color-primary-variant);
-    cursor: default;
-    /* border: 1px solid var(--color-bg-variant);    
-} */
-
+.feature-card p{
+    font-size: small;
+}
 .experience__container > div h3{
     text-align: center;
     margin-bottom: 2rem;
@@ -33,45 +46,36 @@
 }
 
 .experience__details{
-    display: flex;
+    /* display: flex; */
     gap: 1rem;
 }
 
 /* -----------Icon Color--------- */
 
-.general_icon{
-    margin-top: 6px;
-    color: var(--color-primary);
-}
 
 .azurecolor{
     margin-top: 6px;
     color: blue;
-}
-
-.microsoftoffice{
-    margin-top: 6px;
-    color: orangered;
-}
-
-.team_icon{
-    margin-top: 6px;
-    color: green;
+    font-size: 20px;
 }
 
 .html_icon{
     margin-top: 6px;
     color: orangered;
+    font-size: 20px;
 }
 
 .javascript_icon{
     margin-top: 6px;
     color: yellow;
+    background: black;
+    font-size: 20px;
 }
 
 .css_icon{
     margin-top: 6px;
     color: blue;
+    font-size: 20px;
 }
 
 .node_icon{
@@ -80,15 +84,53 @@
     font-size: 20px;
 }
 
-.java_icon{
-    margin-top: 6px;
-    color: red;
-}
-
 .react_icon{
     margin-top: 6px;
-    color: var(--color-primary);
+    color: #0f7d9b;
+    font-size: 20px;
 }
+.postman_icon{
+    margin-top: 6px;
+    color: #f76935;
+    font-size: 20px;
+}
+
+.firebase_icon{
+    margin-top: 6px;
+    color: #f5820d;
+    font-size: 20px;
+}
+
+.api-icon{
+    margin-top: 6px;
+    color: #110df5;
+    font-size: 20px;
+}
+
+.vercel-icon{
+    margin-top: 6px;
+    color: #000000;
+    font-size: 20px;
+}
+/* .general_icon{
+    margin-top: 6px;
+    color: var(--color-primary);
+} */
+
+/* .java_icon{
+    margin-top: 6px;
+    color: red;
+} */
+
+/* .microsoftoffice{
+    margin-top: 6px;
+    color: orangered;
+}
+
+.team_icon{
+    margin-top: 6px;
+    color: green;
+} */
 
 /* ------------------Media Query (Large Devices)--------------- */
 @media screen and (max-width: 1024px){
