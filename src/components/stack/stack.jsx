@@ -28,9 +28,9 @@ const Stack = () => {
       {/* <h5>What Skills I Have</h5> */}
       <h2>Technology</h2>
 
-      <div className="feature-grid experience__container">
+      <div className="stack-grid experience__container">
         {/* I used Stack in place of frontend which the video tutorial wsa using */}
-        <div className="feature-card">
+        <div className="feature-stack">
 
           <h3>Stack</h3>
 
@@ -92,7 +92,7 @@ const Stack = () => {
 
         {/* Professional experience starts here */}
 
-        <div className="feature-card">  
+        <div className="feature-stack">  
 
         <h3>Tools</h3>
 

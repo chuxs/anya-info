@@ -1,5 +1,13 @@
 import React from 'react';
 import './anyainfo.css';
+import Back from '../../images/BackgroundRM.png';
+import Ecom from '../../images/ecommercestore.png';
+import FireChat from '../../images/Firbasechatapp.png';
+import GoogleMapAPI from '../../images/GoogleMapAPI.png';
+import Lulu from '../../images/lulusnativekitchen.png';
+import WebBlog from '../../images/WebBlog.png';
+import Pdf from '../../images/PdfAnalysis.png';
+
 
 const mainPage = () => {
   return (
@@ -29,39 +37,38 @@ const mainPage = () => {
             <div className="feature-grid">
 
                 <div className="feature-card">
-                  <img src="https://via.placeholder.com/150" alt="Project 1" />
+                  <img src={Pdf} alt="Project 1" />
+                  <p>PDF Analysis - Gemini API</p>
                 </div>
 
                 <div className="feature-card">
-
-                   
+                  <img src={Back} alt="Project 1" />
+                  <p>Background Removal - API Tool</p>
                 </div>
 
                 <div className="feature-card">
-                    
+                   <img src={WebBlog} alt="Project 1" />
+                   <p>Web Blog - MERN Stack</p>
                 </div>
 
                 <div className="feature-card">
-
-                   
+                    <img src={FireChat} alt="Project 1" />
+                    <p>Firebase Chat App - Real-time Messaging</p>
                 </div>
 
                 <div className="feature-card">
-
+                   <img src={GoogleMapAPI} alt="Project 1" />
+                   <p>Google Map API - Location Services</p>
                 </div>
 
                 <div className="feature-card">
-
-                   
+                    <img src={Lulu} alt="Project 1" />
+                    <p>Lulu's Native Kitchen - Food Ordering Service</p>
                 </div>
 
-                <div className="feature-card">
-                    
-                </div>
-
-                <div className="feature-card">
-
-                   
+                 <div className="feature-card">
+                   <img src={Ecom} alt="Project 1" />
+                   <p>E-commerce Store - Online Shopping Platform</p>
                 </div>
 
             </div>
