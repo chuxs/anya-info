@@ -149,6 +149,7 @@ img{
     .feature-grid {
         grid-template-columns: 1fr;
         gap: 2rem;
-        margin-left: auto;
+        /* width: 80%; */
+        /* margin-right: 100px; */
     }
 }
