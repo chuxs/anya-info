@@ -25,8 +25,8 @@ import { IoLogoVercel } from "react-icons/io5";
 const Stack = () => {
   return (
     <section class="features" id="feat">
-      <h5>What Skills I Have</h5>
-      <h2>My Experience</h2>
+      {/* <h5>What Skills I Have</h5> */}
+      <h2>Technology</h2>
 
       <div className="feature-grid experience__container">
         {/* I used Stack in place of frontend which the video tutorial wsa using */}

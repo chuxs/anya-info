@@ -16,6 +16,21 @@ nav {
     background: #fff;
     color: black;
     padding-bottom: 55px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    /* width: 1500px; */
+    /* height: 600px; */
+}
+
+.feature-info {
+    padding: 4rem ;
+    border-radius: 10px;
+    border: 1px solid rgba(0,0,0,0.1); 
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    color: black;
+    /* cursor: pointer; */
+    /* width: 600px; */
 }
 
 .hero h1 {
