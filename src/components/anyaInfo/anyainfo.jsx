@@ -10,7 +10,7 @@ const mainPage = () => {
         </nav>
     </header>
         <section id="home" class="hero">
-          <div className="feature-info">
+            
             <p>Hello I am</p>
             <h1>Anya Anya</h1>
             <p>FullStack Developer</p>
@@ -21,27 +21,15 @@ const mainPage = () => {
               
               <button className="contact-btn"><a href="#features">Contact Me</a></button>
             </div>
-            </div>
-
-            <div className="feature-info">
-            <p>Hello I am</p>
-            <h1>Anya Anya</h1>
-            <p>FullStack Developer</p>
-            <div className='buttons-container'>
-              <button className="cv-btn"><a href="#features">Resume</a></button>
-              
-              <button className="cta-btn"><a href="#projects">Projects</a></button>
-              
-              <button className="contact-btn"><a href="#features">Contact Me</a></button>
-            </div>
-            </div>
+            
         </section>
 
         <section className="features" id="projects">
+          <h2>Projects</h2>   
             <div className="feature-grid">
 
                 <div className="feature-card">
-
+                  <img src="https://via.placeholder.com/150" alt="Project 1" />
                 </div>
 
                 <div className="feature-card">
