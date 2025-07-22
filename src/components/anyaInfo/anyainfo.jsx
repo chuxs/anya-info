@@ -21,9 +21,9 @@ const mainPage = () => {
     <>
     <header>
         <nav>
-        <a href="https://www.linkedin.com/in/anya-anya-96100919a/" target=''> <LuLinkedin/> </a>
-        <a href="https://github.com/chuxs" target=''> <FiGithub/> </a>
-        <a href="mailto:chuksanyaanya@gmail.com" target=''> <SiGmail/> </a>
+        <a className='gitlinem' href="https://www.linkedin.com/in/anya-anya-96100919a/" target=''> <LuLinkedin/> </a>
+        <a className='gitlinem' href="https://github.com/chuxs" target=''> <FiGithub/> </a>
+        <a className='gitlinem' href="mailto:chuksanyaanya@gmail.com" target=''> <SiGmail/> </a>
         </nav>
         <GitLinEmail />
     </header>

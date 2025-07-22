@@ -191,6 +191,12 @@ nav {
     /* position: fixed; */
     width: 100%;
     }
+
+    header nav a{
+      color: #5EF2D0;
+    }
+    
+
     .hero {
         padding: 6rem 1rem;
         /* padding-bottom: 2rem; */
