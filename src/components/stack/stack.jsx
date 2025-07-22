@@ -24,7 +24,7 @@ import { IoLogoVercel } from "react-icons/io5";
 
 const Stack = () => {
   return (
-    <section class="features" id="feat">
+    <section className="stack-style" id="feat">
       {/* <h5>What Skills I Have</h5> */}
       <h2>Technology</h2>
 

@@ -1,5 +1,6 @@
 import React from 'react';
 import './anyainfo.css';
+import GitLinEmail from '../gitLinEmail/gitLinEmail.jsx';
 import Back from '../../images/BackgroundRM.png';
 import Ecom from '../../images/ecommercestore.png';
 import FireChat from '../../images/Firbasechatapp.png';
@@ -7,6 +8,12 @@ import GoogleMapAPI from '../../images/GoogleMapAPI.png';
 import Lulu from '../../images/lulusnativekitchen.png';
 import WebBlog from '../../images/WebBlog.png';
 import Pdf from '../../images/PdfAnalysis.png';
+// import { FaLinkedin } from "react-icons/fa";
+import { LuLinkedin } from "react-icons/lu";
+// import { FaGithub } from "react-icons/fa6";
+import { FiGithub } from "react-icons/fi";
+// import { MdEmail } from "react-icons/md";
+import { SiGmail } from "react-icons/si";
 
 
 const mainPage = () => {
@@ -14,8 +21,11 @@ const mainPage = () => {
     <>
     <header>
         <nav>
-
+        <a href="https://www.linkedin.com/in/anya-anya-96100919a/" target=''> <LuLinkedin/> </a>
+        <a href="https://github.com/chuxs" target=''> <FiGithub/> </a>
+        <a href="mailto:chuksanyaanya@gmail.com" target=''> <SiGmail/> </a>
         </nav>
+        <GitLinEmail />
     </header>
         <section id="home" class="hero">
             
@@ -37,37 +47,37 @@ const mainPage = () => {
             <div className="feature-grid">
 
                 <div className="feature-card">
-                  <img src={Pdf} alt="Project 1" />
+                  <img src={Pdf} alt="PDF Analysis - Gemini API" />
                   <p>PDF Analysis - Gemini API</p>
                 </div>
 
                 <div className="feature-card">
-                  <img src={Back} alt="Project 1" />
+                  <img src={Back} alt="Background Removal - API Tool" />
                   <p>Background Removal - API Tool</p>
                 </div>
 
                 <div className="feature-card">
-                   <img src={WebBlog} alt="Project 1" />
+                   <img src={WebBlog} alt="Web Blog - MERN Stack" />
                    <p>Web Blog - MERN Stack</p>
                 </div>
 
                 <div className="feature-card">
-                    <img src={FireChat} alt="Project 1" />
+                    <img src={FireChat} alt="Firebase Chat App - Real-time Messaging" />
                     <p>Firebase Chat App - Real-time Messaging</p>
                 </div>
 
                 <div className="feature-card">
-                   <img src={GoogleMapAPI} alt="Project 1" />
+                   <img src={GoogleMapAPI} alt="Google Map API - Location Services" />
                    <p>Google Map API - Location Services</p>
                 </div>
 
                 <div className="feature-card">
-                    <img src={Lulu} alt="Project 1" />
+                    <img src={Lulu} alt="Lulu's Native Kitchen - Food Ordering Service" />
                     <p>Lulu's Native Kitchen - Food Ordering Service</p>
                 </div>
 
                  <div className="feature-card">
-                   <img src={Ecom} alt="Project 1" />
+                   <img src={Ecom} alt="E-commerce Store - Online Shopping Platform" />
                    <p>E-commerce Store - Online Shopping Platform</p>
                 </div>
 
