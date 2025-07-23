@@ -38,7 +38,7 @@ const mainPage = () => {
 
               <button className="cta-btn"><a href="#projects">Projects</a></button>
               
-              <button className="contact-btn"><a href="#features">Contact Me</a></button>
+              <button className="contact-btn"><a href="#contact">Contact Me</a></button>
             </div>
             
         </section>

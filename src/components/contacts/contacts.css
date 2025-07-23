@@ -1,0 +1,114 @@
+#contact{
+    /* margin-top: 3rem; */
+    padding-top: 5rem;
+    background: #0A192F;
+    padding-bottom: 5rem;
+}
+
+#contact h2{
+    color: #CCD6F6;
+    margin-bottom: 2rem;
+}
+
+.container.contact__container{
+    width: 58%;
+    display: grid;
+    grid-template-columns: 30% 58%;
+    gap: 12%;
+    background: #0A192F;
+}
+
+.contact__options{
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.contact__option{
+    background: #0A192F;
+    padding: 1.2rem;
+    border-radius: 1.2rem;
+    text-align: center;
+    border: 1px solid #5EF2D0;
+    /* transition: var(--transition); */
+    color: #CCD6F6;
+}
+
+.contact__option:hover{
+    /* border-color: var(--color-light);
+    background: transparent; */
+    cursor: pointer;
+}
+
+.contact__option-icon{
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.whatsappicon{
+    color: green;
+    background: white;
+    border-radius: 0.8rem;
+}
+
+.emailicon, .linkedinicon{
+    color: rgb(25, 25, 230);
+    background: white;
+    border-radius: 0.2rem;
+}
+
+.contact__option a{
+    margin-top: 0.7rem;
+    display: inline-block;
+    font-size: 0.8rem;
+}
+
+.contact__option h5{
+    color: var(--color-light);
+}
+
+/* ==============Form=============== */
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+input, textarea{
+    width: 100%;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    background: transparent;
+    border: 1px solid #5EF2D0;
+    resize: none;
+    color: #CCD6F6;
+}
+
+.btn{
+    color: #0A192F;
+    cursor: pointer;
+    display: inline-block;
+    width: max-content;
+    background:#5EF2D0;
+    border-radius: 0.4rem;
+    padding: 0.75rem 1.2rem;
+    transition: var(--transition);
+    font-family: 'Poppins', sans-serif;
+}
+
+/* ------------------Media Query (Medium Devices)---------------- */
+@media screen and (max-width: 1024px){
+    .container.contact__container{
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+}
+   
+
+/* ------------------Media Query (Medium Devices)---------------- */
+@media screen and (max-width: 600px){
+    .container.contact__container{
+        width: 90%;
+    }
+}
