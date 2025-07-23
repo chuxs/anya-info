@@ -14,6 +14,7 @@ import { LuLinkedin } from "react-icons/lu";
 import { FiGithub } from "react-icons/fi";
 // import { MdEmail } from "react-icons/md";
 import { SiGmail } from "react-icons/si";
+import CvResume from '../../cv/ANYA RESUME_CV_DEV.pdf';
 
 
 const mainPage = () => {
@@ -33,8 +34,8 @@ const mainPage = () => {
             <h1>Anya Anya</h1>
             <p>FullStack Developer</p>
             <div className='buttons-container'>
-              <button className="cv-btn"><a href="#features">Resume</a></button>
-              
+              <button className="cv-btn"><a href={CvResume} target="_blank" rel="noopener noreferrer">Resume</a></button>
+
               <button className="cta-btn"><a href="#projects">Projects</a></button>
               
               <button className="contact-btn"><a href="#features">Contact Me</a></button>
@@ -48,37 +49,51 @@ const mainPage = () => {
 
                 <div className="feature-card">
                   <img src={Pdf} alt="PDF Analysis - Gemini API" />
-                  <p>PDF Analysis - Gemini API</p>
+                  <p>PDF Analysis - Gemini API </p>
+                  <a href="https://pdfai-app.azurewebsites.net/" className="view-project-btn" 
+                  target="_blank" rel="noopener noreferrer"> View Project</a>
                 </div>
 
                 <div className="feature-card">
                   <img src={Back} alt="Background Removal - API Tool" />
-                  <p>Background Removal - API Tool</p>
+                  <p>Background Removal - API Tool </p>
+                  <a href="https://anya-background-remover.vercel.app/" className="view-project-btn" 
+                  target="_blank" rel="noopener noreferrer"> View Project</a>
                 </div>
 
                 <div className="feature-card">
                    <img src={WebBlog} alt="Web Blog - MERN Stack" />
-                   <p>Web Blog - MERN Stack</p>
+                   <p>Web Blog - MERN Stack </p>
+                   <a href="https://anya-blog.vercel.app/" className="view-project-btn" 
+                   target="_blank" rel="noopener noreferrer"> View Project</a>
                 </div>
 
                 <div className="feature-card">
                     <img src={FireChat} alt="Firebase Chat App - Real-time Messaging" />
-                    <p>Firebase Chat App - Real-time Messaging</p>
+                    <p>Firebase Chat App </p>
+                    <a href="https://chuxs.github.io/Chatting%20Programm%20JavaScript/index.html" className="view-project-btn" 
+                    target="_blank" rel="noopener noreferrer"> View Project</a>
                 </div>
 
                 <div className="feature-card">
                    <img src={GoogleMapAPI} alt="Google Map API - Location Services" />
-                   <p>Google Map API - Location Services</p>
+                   <p>Google Map API </p>
+                   <a href="https://chuxs.github.io/JavaScript%20Google%20Map%20Api%20Project/index.html" className="view-project-btn" 
+                   target="_blank" rel="noopener noreferrer"> View Project</a>
                 </div>
 
                 <div className="feature-card">
                     <img src={Lulu} alt="Lulu's Native Kitchen - Food Ordering Service" />
-                    <p>Lulu's Native Kitchen - Food Ordering Service</p>
+                    <p>Lulu's Native Kitchen </p>
+                    <a href="https://lulusnativekitchen.vercel.app/" className="view-project-btn" 
+                    target="_blank" rel="noopener noreferrer"> View Project</a>
                 </div>
 
                  <div className="feature-card">
                    <img src={Ecom} alt="E-commerce Store - Online Shopping Platform" />
-                   <p>E-commerce Store - Online Shopping Platform</p>
+                   <p>E-commerce Store </p>
+                   <a href="https://chuxs.github.io/ChuxLiveStore/index.html" className="view-project-btn"
+                   target="_blank" rel="noopener noreferrer"> View Project</a>
                 </div>
 
             </div>
