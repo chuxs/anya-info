@@ -92,7 +92,7 @@ const mainPage = () => {
                  <div className="feature-card">
                    <img src={Ecom} alt="E-commerce Store - Online Shopping Platform" />
                    <p>E-commerce Store </p>
-                   <a href="https://chuxs.github.io/ChuxLiveStore/index.html" className="view-project-btn"
+                   <a href="https://chux-store.vercel.app/" className="view-project-btn"
                    target="_blank" rel="noopener noreferrer"> View Project</a>
                 </div>
 
