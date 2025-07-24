@@ -71,7 +71,7 @@ const mainPage = () => {
                 <div className="feature-card">
                     <img src={FireChat} alt="Firebase Chat App - Real-time Messaging" />
                     <p>Firebase Chat App </p>
-                    <a href="https://chuxs.github.io/Chatting%20Programm%20JavaScript/index.html" className="view-project-btn" 
+                    <a href="https://basic-chat-app-theta.vercel.app/" className="view-project-btn" 
                     target="_blank" rel="noopener noreferrer"> View Project</a>
                 </div>
 
