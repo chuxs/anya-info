@@ -78,7 +78,7 @@ const mainPage = () => {
                 <div className="feature-card">
                    <img src={GoogleMapAPI} alt="Google Map API - Location Services" />
                    <p>Google Map API </p>
-                   <a href="https://chuxs.github.io/JavaScript%20Google%20Map%20Api%20Project/index.html" className="view-project-btn" 
+                   <a href="https://anya-map-project.vercel.app/" className="view-project-btn" 
                    target="_blank" rel="noopener noreferrer"> View Project</a>
                 </div>
 
