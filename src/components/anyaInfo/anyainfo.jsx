@@ -8,6 +8,7 @@ import GoogleMapAPI from '../../images/GoogleMapAPI.png';
 import Lulu from '../../images/lulusnativekitchen.png';
 import WebBlog from '../../images/WebBlog.png';
 import Pdf from '../../images/PdfAnalysis.png';
+import Crypto from '../../images/CryptoDash.png';
 // import { FaLinkedin } from "react-icons/fa";
 import { LuLinkedin } from "react-icons/lu";
 // import { FaGithub } from "react-icons/fa6";
@@ -51,6 +52,13 @@ const mainPage = () => {
                   <img src={Pdf} alt="PDF Analysis - Gemini API" />
                   <p>PDF Analysis - Gemini API </p>
                   <a href="https://pdfai-app.azurewebsites.net/" className="view-project-btn" 
+                  target="_blank" rel="noopener noreferrer"> View Project</a>
+                </div>
+
+                <div className="feature-card">
+                  <img src={Crypto} alt="Crypto - Dashboard" />
+                  <p>Crypto Tracker using API</p>
+                  <a href="https://anya-crypto-app.vercel.app/" className="view-project-btn" 
                   target="_blank" rel="noopener noreferrer"> View Project</a>
                 </div>
 
