@@ -51,7 +51,7 @@ const mainPage = () => {
                 <div className="feature-card">
                   <img src={Pdf} alt="PDF Analysis - Gemini API" />
                   <p>PDF Analysis - Gemini API </p>
-                  <a href="https://pdfai-app.azurewebsites.net/" className="view-project-btn" 
+                  <a href="https://pdf-ai-analyzer-gamma.vercel.app/" className="view-project-btn" 
                   target="_blank" rel="noopener noreferrer"> View Project</a>
                 </div>
 
