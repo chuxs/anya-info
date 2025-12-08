@@ -1,74 +1,78 @@
-import React from 'react'
-import './contacts.css'
-import { MdMarkEmailRead } from 'react-icons/md'
-import { FaWhatsapp } from "react-icons/fa";
-import { FaLinkedin } from "react-icons/fa";
-import { useRef } from 'react';
-import emailjs from 'emailjs-com'
+import React, { useRef } from 'react';
+import './contacts.css';
+import { FiMail, FiLinkedin, FiSend } from 'react-icons/fi';
+import { FaWhatsapp } from 'react-icons/fa';
+import emailjs from 'emailjs-com';
 
 const Contact = () => {
   const form = useRef();
 
   const sendEmail = (e) => {
-   e.preventDefault();
-
-  emailjs.sendForm('service_0gou2tz', 'template_top5g5l', form.current, 'gVwhyHj6d4Xru-SfF').then(
-      (result) => {
+    e.preventDefault();
+    
+    emailjs.sendForm('service_0gou2tz', 'template_top5g5l', form.current, 'gVwhyHj6d4Xru-SfF')
+      .then((result) => {
         console.log('Email sent:', result.text);
-      },
-      (error) => {
+        alert('Message sent successfully!');
+      })
+      .catch((error) => {
         console.error('Email send error:', error.text);
-      }
-    );
+        alert('Failed to send message. Please try again.');
+      });
 
-  e.target.reset();
-      // .then((result) => {
-      //     console.log(result.text);
-      // }, (error) => {
-      //     console.log(error.text);
-      // });
+    e.target.reset();
   };
 
   return (
-    <section id='contact'>
-      {/* <h5>Get in Touch</h5> */}
-      <h2>Contact Me</h2>
+    <section id="contact" className="contact">
+      <div className="section-header">
+        <h2>Get In Touch</h2>
+        <p>Let's build something great together</p>
+      </div>
 
-      <div className="container contact__container">
-        <div className="contact__options">
-          <article className='contact__option'>
-            <MdMarkEmailRead className='contact__option-icon emailicon'/>
-            <h4>Email</h4>
-            <h5>chuksanyaanya@gmail.com</h5>
-            <a href="mailto:chuksanyaanya@gmail.com"> Send an Email</a>
-          </article>
+      <div className="contact-container">
+        <div className="contact-info">
+          <a href="mailto:chuksanyaanya@gmail.com" className="contact-item">
+            <FiMail />
+            <div>
+              <h4>Email</h4>
+              <span>chuksanyaanya@gmail.com</span>
+            </div>
+          </a>
 
-          <article className='contact__option'>
-            <FaLinkedin className='contact__option-icon linkedinicon'/>
-            <h4>LinkedIn</h4>
-            <h5>Anya Chukwudi Anya</h5>
-            <a href="https://www.linkedin.com/in/anya-anya-96100919a/" rel="noreferrer" target='_blank'> Send a chat on LinkedIn</a>
-          </article>
+          <a href="https://www.linkedin.com/in/anya-anya-96100919a/" target="_blank" rel="noopener noreferrer" className="contact-item">
+            <FiLinkedin />
+            <div>
+              <h4>LinkedIn</h4>
+              <span>Anya Chukwudi Anya</span>
+            </div>
+          </a>
 
-          <article className='contact__option'>
-            <FaWhatsapp className='contact__option-icon whatsappicon'/>
-            <h4>WhatsApp</h4>
-            <h5>+2348020352170</h5>
-            <a href="https://api.whatsapp.com/send?phone=+2348020352170" rel="noreferrer" target='_blank'> Send a DM</a>
-          </article>
+          <a href="https://api.whatsapp.com/send?phone=+2348020352170" target="_blank" rel="noopener noreferrer" className="contact-item">
+            <FaWhatsapp />
+            <div>
+              <h4>WhatsApp</h4>
+              <span>+234 802 035 2170</span>
+            </div>
+          </a>
         </div>
 
-        {/* This is the end of the left contact, the net phase is the right contact session */}
-
-        <form ref={form} onSubmit={sendEmail}>
-          <input type="text" name='name' placeholder='Your full name' required/>
-          <input type="email" name='email' placeholder='Your Email' required />
-          <textarea name="message" rows="7" placeholder='Leave your message here' required></textarea>
-          <button type='submit' className='btn btn-primary'>Send Message</button>
+        <form ref={form} onSubmit={sendEmail} className="contact-form">
+          <input type="text" name="name" placeholder="Your Name" required />
+          <input type="email" name="email" placeholder="Your Email" required />
+          <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+          <button type="submit">
+            <FiSend />
+            Send Message
+          </button>
         </form>
       </div>
-    </section>
-  )
-}
 
-export default Contact
+      <footer className="footer">
+        <p>© 2024 Anya Anya. Built with React.</p>
+      </footer>
+    </section>
+  );
+};
+
+export default Contact;

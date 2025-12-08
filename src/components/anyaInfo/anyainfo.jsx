@@ -1,116 +1,130 @@
-import React from 'react';
-import './anyainfo.css';
-import GitLinEmail from '../gitLinEmail/gitLinEmail.jsx';
-import Back from '../../images/BackgroundRM.png';
-import Ecom from '../../images/ecommercestore.png';
-import FireChat from '../../images/Firbasechatapp.png';
-import GoogleMapAPI from '../../images/GoogleMapAPI.png';
-import Lulu from '../../images/lulusnativekitchen.png';
-import WebBlog from '../../images/WebBlog.png';
-import Pdf from '../../images/PdfAnalysis.png';
-import Crypto from '../../images/CryptoDash.png';
-// import { FaLinkedin } from "react-icons/fa";
-import { LuLinkedin } from "react-icons/lu";
-// import { FaGithub } from "react-icons/fa6";
-import { FiGithub } from "react-icons/fi";
-// import { MdEmail } from "react-icons/md";
-import { SiGmail } from "react-icons/si";
-import CvResume from '../../cv/ANYA RESUME_CV_DEV.pdf';
+import React from "react";
+import "./anyainfo.css";
+import Back from "../../images/BackgroundRM.png";
+import Ecom from "../../images/ecommercestore.png";
+import FireChat from "../../images/Firbasechatapp.png";
+import GoogleMapAPI from "../../images/GoogleMapAPI.png";
+import Lulu from "../../images/lulusnativekitchen.png";
+import WebBlog from "../../images/WebBlog.png";
+import Pdf from "../../images/PdfAnalysis.png";
+import Crypto from "../../images/CryptoDash.png";
+import { HiArrowDown } from "react-icons/hi";
+import { FiExternalLink } from "react-icons/fi";
+import CvResume from "../../cv/ANYA RESUME_CV_DEV.pdf";
 
+const projects = [
+  {
+    title: "PDF Analysis",
+    desc: "AI-powered document analyzer using Gemini API",
+    img: Pdf,
+    link: "https://pdf-ai-analyzer-gamma.vercel.app/",
+  },
+  {
+    title: "Crypto Tracker",
+    desc: "Real-time cryptocurrency dashboard",
+    img: Crypto,
+    link: "https://anya-crypto-app.vercel.app/",
+  },
+  {
+    title: "Background Remover",
+    desc: "Remove backgrounds from images instantly",
+    img: Back,
+    link: "https://anya-background-remover.vercel.app/",
+  },
+  {
+    title: "Web Blog",
+    desc: "Full-stack blog built with MERN",
+    img: WebBlog,
+    link: "https://anya-blog.vercel.app/",
+  },
+  {
+    title: "Firebase Chat",
+    desc: "Real-time messaging application",
+    img: FireChat,
+    link: "https://basic-chat-app-theta.vercel.app/",
+  },
+  {
+    title: "Google Maps",
+    desc: "Interactive location services",
+    img: GoogleMapAPI,
+    link: "https://anya-map-project.vercel.app/",
+  },
+  {
+    title: "Lulu's Kitchen",
+    desc: "Food ordering platform",
+    img: Lulu,
+    link: "https://lulusnativekitchen.vercel.app/",
+  },
+  {
+    title: "E-commerce Store",
+    desc: "Online shopping platform",
+    img: Ecom,
+    link: "https://chux-store.vercel.app/",
+  },
+];
 
-const mainPage = () => {
+const MainPage = () => {
   return (
     <>
-    <header>
-        <nav>
-        <a className='gitlinem' href="https://www.linkedin.com/in/anya-anya-96100919a/" target=''> <LuLinkedin/> </a>
-        <a className='gitlinem' href="https://github.com/chuxs" target=''> <FiGithub/> </a>
-        <a className='gitlinem' href="mailto:chuksanyaanya@gmail.com" target=''> <SiGmail/> </a>
-        </nav>
-        <GitLinEmail />
-    </header>
-        <section id="home" class="hero">
-            
-            <p>Hello I am</p>
-            <h1>Anya Anya</h1>
-            <p>FullStack Developer</p>
-            <div className='buttons-container'>
-              <button className="cv-btn"><a href={CvResume} target="_blank" rel="noopener noreferrer">Resume</a></button>
+      {/* Hero Section */}
+      <section id="home" className="hero">
+        <div className="hero-content">
+          <p className="hero-greeting">Hello, I'm</p>
+          <h1 className="hero-name">Anya Anya</h1>
+          <p className="hero-title">Full Stack Developer</p>
+          <p className="hero-desc">
+            I build clean, efficient web applications with modern technologies.
+          </p>
+          <div className="hero-buttons">
+            <a
+              href={CvResume}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-primary"
+            >
+              Resume
+            </a>
+            <a href="#projects" className="btn-secondary">
+              View Projects
+            </a>
+          </div>
+        </div>
+        <a href="#projects" className="scroll-indicator">
+          <HiArrowDown />
+        </a>
+      </section>
 
-              <button className="cta-btn"><a href="#projects">Projects</a></button>
-              
-              <button className="contact-btn"><a href="#contact">Contact Me</a></button>
-            </div>
-            
-        </section>
-
-        <section className="features" id="projects">
-          <h2>Projects</h2>   
-            <div className="feature-grid">
-
-                <div className="feature-card">
-                  <img src={Pdf} alt="PDF Analysis - Gemini API" />
-                  <p>PDF Analysis - Gemini API </p>
-                  <a href="https://pdf-ai-analyzer-gamma.vercel.app/" className="view-project-btn" 
-                  target="_blank" rel="noopener noreferrer"> View Project</a>
+      {/* Projects Section */}
+      <section className="projects" id="projects">
+        <div className="section-header">
+          <h2>Projects</h2>
+          <p>A selection of my recent work</p>
+        </div>
+        <div className="projects-grid">
+          {projects.map((project, index) => (
+            <a
+              href={project.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="project-card"
+              key={index}
+            >
+              <div className="project-image">
+                <img src={project.img} alt={project.title} />
+                <div className="project-overlay">
+                  <FiExternalLink />
                 </div>
-
-                <div className="feature-card">
-                  <img src={Crypto} alt="Crypto - Dashboard" />
-                  <p>Crypto Tracker using API</p>
-                  <a href="https://anya-crypto-app.vercel.app/" className="view-project-btn" 
-                  target="_blank" rel="noopener noreferrer"> View Project</a>
-                </div>
-
-                <div className="feature-card">
-                  <img src={Back} alt="Background Removal - API Tool" />
-                  <p>Background Removal - API Tool </p>
-                  <a href="https://anya-background-remover.vercel.app/" className="view-project-btn" 
-                  target="_blank" rel="noopener noreferrer"> View Project</a>
-                </div>
-
-                <div className="feature-card">
-                   <img src={WebBlog} alt="Web Blog - MERN Stack" />
-                   <p>Web Blog - MERN Stack </p>
-                   <a href="https://anya-blog.vercel.app/" className="view-project-btn" 
-                   target="_blank" rel="noopener noreferrer"> View Project</a>
-                </div>
-
-                <div className="feature-card">
-                    <img src={FireChat} alt="Firebase Chat App - Real-time Messaging" />
-                    <p>Firebase Chat App </p>
-                    <a href="https://basic-chat-app-theta.vercel.app/" className="view-project-btn" 
-                    target="_blank" rel="noopener noreferrer"> View Project</a>
-                </div>
-
-                <div className="feature-card">
-                   <img src={GoogleMapAPI} alt="Google Map API - Location Services" />
-                   <p>Google Map API </p>
-                   <a href="https://anya-map-project.vercel.app/" className="view-project-btn" 
-                   target="_blank" rel="noopener noreferrer"> View Project</a>
-                </div>
-
-                <div className="feature-card">
-                    <img src={Lulu} alt="Lulu's Native Kitchen - Food Ordering Service" />
-                    <p>Lulu's Native Kitchen </p>
-                    <a href="https://lulusnativekitchen.vercel.app/" className="view-project-btn" 
-                    target="_blank" rel="noopener noreferrer"> View Project</a>
-                </div>
-
-                 <div className="feature-card">
-                   <img src={Ecom} alt="E-commerce Store - Online Shopping Platform" />
-                   <p>E-commerce Store </p>
-                   <a href="https://chux-store.vercel.app/" className="view-project-btn"
-                   target="_blank" rel="noopener noreferrer"> View Project</a>
-                </div>
-
-            </div>
-        </section>
-        </>
-
+              </div>
+              <div className="project-info">
+                <h3>{project.title}</h3>
+                <p>{project.desc}</p>
+              </div>
+            </a>
+          ))}
+        </div>
+      </section>
+    </>
   );
-}
+};
 
-export default mainPage;
-
-// const WeatherApp = () => { -----you can add more functionality here
+export default MainPage;

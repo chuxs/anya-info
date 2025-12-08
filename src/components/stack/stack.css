@@ -1,171 +1,84 @@
-.stack-style {
-    padding: 4rem 1rem;
-    background: #0A192F;
- 
+.skills {
+  padding: 6rem 2rem;
+  background: var(--bg-secondary);
 }
 
-.stack-style h2 {
-    text-align: center;
-    margin-bottom: 3rem;
-    color: #CCD6F6;
+.skills .section-header {
+  text-align: center;
+  margin-bottom: 4rem;
 }
 
-.stack-style h5 {
-    text-align: center;
-    color: #CCD6F6;
+.skills .section-header h2 {
+  font-family: 'Syne', sans-serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 0.5rem;
 }
 
-
-.stack-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 2rem;
-    max-width: 1200px;
-    margin: 0 auto;
+.skills .section-header p {
+  color: var(--text-secondary);
+  font-size: 1.1rem;
 }
 
-.feature-stack {
-    padding: 2rem;
-    /* background: #f9f9f9; */
-    border-radius: 5px;
-    /* border: 1px solid rgba(0,0,0,0.1); */
-    border: 1px solid #5EF2D0;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    color: black;
-    cursor: pointer;
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  max-width: 900px;
+  margin: 0 auto;
 }
 
-.feature-stack p{
-    font-size: small;
+.skill-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.875rem 1.5rem;
+  background: var(--bg-primary);
+  border-radius: 50px;
+  border: 1px solid var(--border);
+  transition: var(--transition);
 }
 
-.experience__container > div h3{
-    text-align: center;
-    margin-bottom: 2rem;
-    color: #5EF2D0;
+.skill-item:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--card-shadow);
+  border-color: transparent;
 }
 
-.experience__content{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    row-gap: 2rem;
-   
+.skill-item svg {
+  font-size: 1.5rem;
 }
 
-.experience__details{
-    /* display: flex; */
+.skill-item span {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--text-primary);
+}
+
+@media (max-width: 768px) {
+  .skills {
+    padding: 4rem 1.5rem;
+  }
+
+  .skills .section-header h2 {
+    font-size: 2rem;
+  }
+
+  .skills-grid {
     gap: 1rem;
-}
+  }
 
-/* -----------Icon Color--------- */
+  .skill-item {
+    padding: 0.75rem 1.25rem;
+  }
 
+  .skill-item svg {
+    font-size: 1.25rem;
+  }
 
-.azurecolor{
-    margin-top: 6px;
-    color: #36BBEE;
-    font-size: 20px;
-}
-
-.html_icon{
-    margin-top: 6px;
-    color: orangered;
-    font-size: 20px;
-}
-
-.javascript_icon{
-    margin-top: 6px;
-    color: yellow;
-    background: black;
-    font-size: 20px;
-}
-
-.css_icon{
-    margin-top: 6px;
-    color: blue;
-    font-size: 20px;
-    background: #CCD6F6;
-}
-
-.node_icon{
-    margin-top: 6px;
-    color: green;
-    font-size: 20px;
-}
-
-.react_icon{
-    margin-top: 6px;
-    color: #36BBEE;
-    font-size: 20px;
-}
-.postman_icon{
-    margin-top: 6px;
-    color: #f76935;
-    font-size: 20px;
-}
-
-.firebase_icon{
-    margin-top: 6px;
-    color: #f5820d;
-    font-size: 20px;
-}
-
-.api-icon{
-    margin-top: 6px;
-    color: #110df5;
-    font-size: 20px;
-    background: #CCD6F6;
-}
-
-.vercel-icon{
-    margin-top: 6px;
-    color: #000000;
-    font-size: 20px;
-}
-/* .general_icon{
-    margin-top: 6px;
-    color: var(--color-primary);
-} */
-
-/* .java_icon{
-    margin-top: 6px;
-    color: red;
-} */
-
-/* .microsoftoffice{
-    margin-top: 6px;
-    color: orangered;
-}
-
-.team_icon{
-    margin-top: 6px;
-    color: green;
-} */
-
-/* ------------------Media Query (Large Devices)--------------- */
-@media screen and (max-width: 1024px){
-    .experience__container{
-        grid-template-columns: 1fr;
-    }
-
-    .experience__container > div {
-        width: 80%;
-        padding: 2rem;
-        margin: 0 auto;
-    }
-
-    .experience__content{
-        padding: 1rem;
-    }
-}
-
-/* ------------------Media Query (Medium Devices)---------------- */
-@media screen and (max-width: 600px){
-    .experience__container{
-        gap: 1rem;
-    }
-
-    .experience__container > div{
-        width: 100%;
-        padding: 2rem 1rem;
-    }  
+  .skill-item span {
+    font-size: 0.875rem;
+  }
 }
