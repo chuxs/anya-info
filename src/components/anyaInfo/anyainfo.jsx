@@ -8,11 +8,18 @@ import Lulu from "../../images/lulusnativekitchen.png";
 import WebBlog from "../../images/WebBlog.png";
 import Pdf from "../../images/PdfAnalysis.png";
 import Crypto from "../../images/CryptoDash.png";
+import Posture from "../../images/Posture.png";
 import { HiArrowDown } from "react-icons/hi";
 import { FiExternalLink } from "react-icons/fi";
-import CvResume from "../../cv/ANYA RESUME_CV_DEV.pdf";
+import CvResume from "../../cv/ANYA RESUME.pdf";
 
 const projects = [
+  {
+    title: "Posture Monitoring Software - Beta (Electron JS)",
+    desc: "Real-time posture monitoring system using TensorFlow.js",
+    img: Posture,
+    link: "https://github.com/chuxs/Pose-Detection/tree/alternativePoseModel",
+  },
   {
     title: "PDF Analysis",
     desc: "AI-powered document analyzer using Gemini API",
