@@ -40,7 +40,7 @@ const projects = [
   },
   {
     title: "Web Blog",
-    desc: "Full-stack blog built with MERN",
+    desc: "Simple Blogging Website (Firebase)",
     img: WebBlog,
     link: "https://anya-blog.vercel.app/",
   },
@@ -58,7 +58,7 @@ const projects = [
   },
   {
     title: "Lulu's Kitchen",
-    desc: "Food ordering platform",
+    desc: "Food ordering platform (client-side JavaScript)",
     img: Lulu,
     link: "https://lulusnativekitchen.vercel.app/",
   },
