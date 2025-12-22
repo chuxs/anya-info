@@ -48,13 +48,13 @@ const Contact = () => {
             </div>
           </a>
 
-          <a href="https://api.whatsapp.com/send?phone=+2348020352170" target="_blank" rel="noopener noreferrer" className="contact-item">
+          {/* <a href="https://api.whatsapp.com/send?phone=+2348020352170" target="_blank" rel="noopener noreferrer" className="contact-item">
             <FaWhatsapp />
             <div>
               <h4>WhatsApp</h4>
-              <span>+234 802 035 2170</span>
+              <span>+1 236 975 2649</span>
             </div>
-          </a>
+          </a> */}
         </div>
 
         <form ref={form} onSubmit={sendEmail} className="contact-form">
