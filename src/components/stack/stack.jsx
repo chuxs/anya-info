@@ -2,7 +2,7 @@ import React from 'react';
 import './stack.css';
 import { FaHtml5, FaCss3Alt, FaReact, FaNodeJs } from 'react-icons/fa';
 import { IoLogoJavascript, IoLogoFirebase } from 'react-icons/io5';
-import { SiPostman, SiMongodb, SiExpress, SiVercel } from 'react-icons/si';
+import { SiPostman, SiMongodb, SiExpress, SiVercel, SiElectron, SiNextdotjs, SiTailwindcss } from 'react-icons/si';
 import { VscAzure } from 'react-icons/vsc';
 
 const skills = [
@@ -17,6 +17,9 @@ const skills = [
   { name: 'Azure', icon: VscAzure, color: '#0078D4' },
   { name: 'Postman', icon: SiPostman, color: '#FF6C37' },
   { name: 'Vercel', icon: SiVercel, color: '#000000' },
+  { name: 'Electron', icon: SiElectron, color: '#47848F' },
+  { name: 'Next.js', icon: SiNextdotjs, color: '#000000' },
+  { name: 'Tailwind CSS', icon: SiTailwindcss, color: '#06B6D4' },
 ];
 
 const Stack = () => {

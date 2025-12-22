@@ -1,7 +1,7 @@
 import React, { useRef } from 'react';
 import './contacts.css';
 import { FiMail, FiLinkedin, FiSend } from 'react-icons/fi';
-import { FaWhatsapp } from 'react-icons/fa';
+// import { FaWhatsapp } from 'react-icons/fa';
 import emailjs from 'emailjs-com';
 
 const Contact = () => {
