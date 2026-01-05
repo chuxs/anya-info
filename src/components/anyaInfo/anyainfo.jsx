@@ -9,64 +9,81 @@ import WebBlog from "../../images/WebBlog.png";
 import Pdf from "../../images/PdfAnalysis.png";
 import Crypto from "../../images/CryptoDash.png";
 import Posture from "../../images/Posture.png";
+import TutorBid from "../../images/TutorBid.png";
 import { HiArrowDown } from "react-icons/hi";
 import { FiExternalLink } from "react-icons/fi";
 import CvResume from "../../cv/ANYA RESUME.pdf";
 
 const projects = [
   {
+    title: "TutorBid",
+    desc: "A platform for students to find tutors and for tutors to find students",
+    img: TutorBid,
+    link: "http://tutor-bid.azurewebsites.net/",
+    technologies: ["EJS", "Node.js", "Express", "Firebase DB", "Azure"],
+  },
+  {
     title: "Posture Monitoring Software - Beta (Electron JS)",
     desc: "Real-time posture monitoring system using TensorFlow.js",
     img: Posture,
     link: "https://github.com/chuxs/Pose-Detection/tree/alternativePoseModel",
+    technologies: ["Electron", "JavaScript", "Node.js", "TensorFlow.js"],
   },
   {
     title: "PDF Analysis",
     desc: "AI-powered document analyzer using Gemini API",
     img: Pdf,
     link: "https://pdf-ai-analyzer-gamma.vercel.app/",
+    technologies: ["EJS", "Node.js", "JavaScript", "Gemini API", "Vercel"],
   },
   {
     title: "Crypto Tracker",
     desc: "Real-time cryptocurrency dashboard",
     img: Crypto,
     link: "https://anya-crypto-app.vercel.app/",
+    technologies: ["EJS", "Node.js", "JavaScript", "Vercel"],
   },
   {
     title: "Background Remover",
     desc: "Remove backgrounds from images instantly",
     img: Back,
     link: "https://anya-background-remover.vercel.app/",
+    technologies: ["EJS", "Node.js", "JavaScript", "Vercel"],
   },
   {
     title: "Web Blog",
     desc: "Simple Blogging Website (Firebase)",
     img: WebBlog,
     link: "https://anya-blog.vercel.app/",
+    technologies: ["EJS", "Node.js", "Firebase", "Vercel"],
   },
   {
     title: "Firebase Chat",
     desc: "Real-time messaging application",
     img: FireChat,
     link: "https://basic-chat-app-theta.vercel.app/",
+    technologies: ["JavaScript", "Firebase", "Vercel"],
   },
   {
     title: "Google Maps",
     desc: "Interactive location services",
     img: GoogleMapAPI,
     link: "https://anya-map-project.vercel.app/",
+    technologies: ["Node.js", "JavaScript", "Google Maps API", "Vercel"],
   },
   {
     title: "Lulu's Kitchen",
     desc: "Food ordering platform (client-side JavaScript)",
     img: Lulu,
     link: "https://lulusnativekitchen.vercel.app/",
+    technologies: ["HTML5", "CSS3", "JavaScript", "Vercel"],
   },
   {
     title: "E-commerce Store",
     desc: "Online shopping platform",
     img: Ecom,
     link: "https://chux-store.vercel.app/",
+    technologies: ["HTML5", "CSS3", "JavaScript", "Vercel"],
   },
 ];
 
@@ -125,6 +142,13 @@ const MainPage = () => {
               <div className="project-info">
                 <h3>{project.title}</h3>
                 <p>{project.desc}</p>
+                <div className="project-tech">
+                  {project.technologies.map((tech, techIndex) => (
+                    <span key={techIndex} className="tech-tag">
+                      {tech}
+                    </span>
+                  ))}
+                </div>
               </div>
             </a>
           ))}
